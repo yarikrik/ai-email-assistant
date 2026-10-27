@@ -1,0 +1,8 @@
+services:
+  assistant:
+    build: .
+    env_file: .env
+    volumes:
+      - ./data:/app/data                 # база оброблених листів, CSV-журнал, credentials.json
+      - ./knowledge.md:/app/knowledge.md:ro
+    restart: unless-stopped

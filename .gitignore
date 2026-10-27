@@ -1,0 +1,6 @@
+.env
+data/
+knowledge.md
+__pycache__/
+.venv/
+.pytest_cache/
